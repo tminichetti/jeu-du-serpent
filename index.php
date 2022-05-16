@@ -1,8 +1,9 @@
 <?php
-require 'class.php';
-$joueur1 = new Player("Kylian");
+require 'player.php';
+$joueur1 = new Player("Kylian", true);
 $joueur2 = new Player("Thomas");
 
+$allPlayers = array($joueur1, $joueur2);
 
 ?>
 
@@ -31,17 +32,17 @@ $joueur2 = new Player("Thomas");
         <h2>Scores</h2>
         <div class="score-list">
             <div class="score joueur1">
-                <p><?=$joueur1->name?></p>
-                <span id="score1"><?=$joueur1->case?></span>
+                <p><?= $joueur1->name ?></p>
+                <span id="score1"><?= $joueur1->case ?></span>
             </div>
             <div class="score joueur2">
-            <p><?=$joueur2->name?></p>
-                <span id="score1"><?=$joueur2->case?></span>
+                <p><?= $joueur2->name ?></p>
+                <span id="score1"><?= $joueur2->case ?></span>
             </div>
         </div>
     </div>
     <div class="roll">
-        <span class="rule">Joueur 1 à toi de jouer</span>
+        <span class="rule"><?= showNamePlayer($allPlayers) ?> à toi de jouer</span>
 
         <div class="btn">
             <button id="roll">Lancer le dé</button>
