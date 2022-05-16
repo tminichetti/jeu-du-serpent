@@ -13,11 +13,12 @@ class Player
     }
 }
 
-function showNamePlayer(array $allPlayers)
+function getPlayerPlaying(array $allPlayers)
 {
     foreach ($allPlayers as $player) {
         if ($player->play) {
-            echo $player->name;
+            echo $player;
+            return;
         }
     }
 }

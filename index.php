@@ -3,7 +3,7 @@ require 'player.php';
 $joueur1 = new Player("Kylian", true);
 $joueur2 = new Player("Thomas");
 
-$allPlayers = array($joueur1, $joueur2);
+$playerPlaying = array($joueur1, $joueur2);
 
 ?>
 
@@ -42,7 +42,7 @@ $allPlayers = array($joueur1, $joueur2);
         </div>
     </div>
     <div class="roll">
-        <span class="rule"><?= showNamePlayer($allPlayers) ?> à toi de jouer</span>
+        <span class="rule"><?= $playerPlaying[0]->name ?> à toi de jouer</span>
 
         <div class="btn">
             <button id="roll">Lancer le dé</button>
