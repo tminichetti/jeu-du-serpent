@@ -31,6 +31,17 @@
             </div>
         </div>
     </div>
+    <div class="roll">
+        <span class="rule">Joueur 1 à toi de jouer</span>
+
+        <div class="btn">
+            <button id="roll">Lancer le dé</button>
+        </div>
+    </div>
+
+    <div class="btn reset">
+        <button id="reset">Recommencer la partie</button>
+    </div>
 </body>
 
 </html>
