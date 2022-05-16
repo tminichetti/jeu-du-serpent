@@ -17,8 +17,7 @@ function getPlayerPlaying(array $allPlayers)
 {
     foreach ($allPlayers as $player) {
         if ($player->play) {
-            echo $player;
-            return;
+            return $player;
         }
     }
 }
