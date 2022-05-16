@@ -1,3 +1,12 @@
+<?php
+require 'class.php';
+$joueur1 = new Player("Kylian");
+$joueur2 = new Player("Thomas");
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,12 +31,12 @@
         <h2>Scores</h2>
         <div class="score-list">
             <div class="score joueur1">
-                <p>Joueur 1</p>
-                <span id="score1">10</span>
+                <p><?=$joueur1->name?></p>
+                <span id="score1"><?=$joueur1->case?></span>
             </div>
             <div class="score joueur2">
-                <p>Joueur 2</p>
-                <span id="score2">20</span>
+            <p><?=$joueur2->name?></p>
+                <span id="score1"><?=$joueur2->case?></span>
             </div>
         </div>
     </div>
