@@ -17,6 +17,20 @@
     <div id="container">
         <?php include 'create-grid.php'; ?>
     </div>
+
+    <div class="scores">
+        <h2>Scores</h2>
+        <div class="score-list">
+            <div class="score joueur1">
+                <p>Joueur 1</p>
+                <span id="score1">10</span>
+            </div>
+            <div class="score joueur2">
+                <p>Joueur 2</p>
+                <span id="score2">20</span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
