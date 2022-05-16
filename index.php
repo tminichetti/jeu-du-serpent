@@ -1,5 +1,8 @@
 <?php
 require 'player.php';
+require 'de.php';
+require 'bonus-trap.php';
+require 'more50.php';
 $joueur1 = new Player("Kylian", true);
 $joueur2 = new Player("Thomas");
 
