@@ -1,5 +1,5 @@
 <?php
-Class More50() {
+
     public function more50(int $case) {
         if ($case >= 50)
         {
@@ -8,5 +8,5 @@ Class More50() {
         return $case;
         
     }
-}
+
 ?>

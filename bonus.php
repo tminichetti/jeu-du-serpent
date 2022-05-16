@@ -1,5 +1,5 @@
 <?php
-Class Bonus() {
+
     public function bonus(int $case) {
         if ($case == 20)
         {
@@ -16,5 +16,5 @@ Class Bonus() {
         return $case;
         
     }
-}
+
 ?>
