@@ -22,6 +22,19 @@ h1 {
     margin: auto;
 }
 
-canvas {
-    margin-top: 20px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: grey 1px solid;
+    width: 60px;
+    height: 60px;
 }

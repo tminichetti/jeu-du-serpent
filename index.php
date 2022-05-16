@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <h1>Jeu du serpent - JavaScript</h1>
+        <h1>Jeu du serpent</h1>
     </header>
 
     <div id="container">
-        <canvas id="plateau" width="600" height="600"></canvas>
+        <?php include 'create-grid.php'; ?>
     </div>
 </body>
 
