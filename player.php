@@ -11,6 +11,20 @@ class Player
         $this->name = $name;
         $this->play = $_play;
     }
+
+    public function addCase(int $_case)
+    {
+        $this->case = $this->case + $_case > 50 ? 25 : $this->case + $_case;
+    }
+
+    public function getCase()
+    {
+        return $this->case;
+    }
+
+    public function isWinner() {
+        return $this->case === 50;
+    }
 }
 
 function getPlayerPlaying(array $allPlayers)
