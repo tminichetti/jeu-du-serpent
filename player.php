@@ -3,13 +3,11 @@ class Player
 {
     public int $case;
     public string $name;
-    public bool $play;
 
-    public function __construct(string $name, ?bool $_play = false)
+    public function __construct(string $name)
     {
         $this->case = 0;
         $this->name = $name;
-        $this->play = $_play;
     }
 
     public function addCase(int $_case)
@@ -22,16 +20,13 @@ class Player
         return $this->case;
     }
 
-    public function isWinner() {
-        return $this->case === 50;
+    public function getName()
+    {
+        return $this->name;
     }
-}
 
-function getPlayerPlaying(array $allPlayers)
-{
-    foreach ($allPlayers as $player) {
-        if ($player->play) {
-            return $player;
-        }
+    public function isWinner()
+    {
+        return $this->case === 50;
     }
 }

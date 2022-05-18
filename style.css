@@ -41,6 +41,22 @@ h1 {
     border-radius: 10px;
 }
 
+.grid-item .both {
+    background-color: linear-gradient(to left,
+            cornflowerblue 0%,
+            cornflowerblue 50%,
+            orangered 50%,
+            orangered 100%);
+}
+
+.grid-item .player1 {
+    background-color: cornflowerblue;
+}
+
+.grid-item .player2 {
+    background-color: orangered;
+}
+
 .scores {
     margin-top: 30px;
     display: flex;

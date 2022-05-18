@@ -1,12 +1,8 @@
 <?php
+require 'Game.php';
 require 'Player.php';
-require 'de.php';
 require 'bonus-trap.php';
-require 'more50.php';
-$joueur1 = new Player("Kylian", true);
-$joueur2 = new Player("Thomas");
-
-$playerPlaying = array($joueur1, $joueur2);
+$game = new Game('Player1', 'Player2');
 
 ?>
 
@@ -28,24 +24,24 @@ $playerPlaying = array($joueur1, $joueur2);
     </header>
 
     <div id="container">
-        <?php include 'create-grid.php'; ?>
+        <?= $game->grid() ?>
     </div>
 
     <div class="scores">
         <h2>Scores</h2>
         <div class="score-list">
             <div class="score joueur1">
-                <p><?= $joueur1->name ?></p>
-                <span id="score1"><?= $joueur1->case ?></span>
+                <p><?= $game->getPlayer1()->getName() ?></p>
+                <span id="score1"><?= $game->getPlayer1()->getCase() ?></span>
             </div>
             <div class="score joueur2">
-                <p><?= $joueur2->name ?></p>
-                <span id="score1"><?= $joueur2->case ?></span>
+                <p><?= $game->getPlayer2()->getName() ?></p>
+                <span id="score1"><?= $game->getPlayer2()->getCase() ?></span>
             </div>
         </div>
     </div>
     <div class="roll">
-        <span class="rule"><?= $playerPlaying[0]->name ?> à toi de jouer</span>
+        <span class="rule"><?= $game->getCurrentPlayer()->getName() ?> à toi de jouer</span>
 
         <div class="btn">
             <button id="roll">Lancer le dé</button>
