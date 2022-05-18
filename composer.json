@@ -3,7 +3,7 @@
     "description": "mini jeux",
     "license": "proprietary",
     "scripts": {
-        "test": "$ php .vendor/bin/phpunit test"
+        "test": "vendor/bin/phpunit test"
     },
     "autoload": {
         "classmap": [
