@@ -1,5 +1,5 @@
 <?php
-require 'player.php';
+require 'Player.php';
 require 'de.php';
 require 'bonus-trap.php';
 require 'more50.php';

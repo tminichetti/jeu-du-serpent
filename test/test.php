@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-final class playerTests extends TestCase
+final class PlayerTests extends TestCase
 {
     public function testAddCase()
     {
