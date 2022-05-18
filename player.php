@@ -1,4 +1,5 @@
 <?php
+require 'bonus-trap.php';
 class Player
 {
     public int $case;
@@ -12,7 +13,10 @@ class Player
 
     public function addCase(int $_case)
     {
-        $this->case = $this->case + $_case > 50 ? 25 : $this->case + $_case;
+        if ($_case > 50) {
+            return $this->case = 25;
+        }
+        return $this->case = check_case($_case);
     }
 
     public function getCase()
